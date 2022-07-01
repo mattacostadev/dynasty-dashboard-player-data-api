@@ -1,0 +1,27 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    platform: postgres
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://${DD_DATABASE_URL}:5432/stats-db
+    username: ${DD_DATABASE_USER}
+    password: ${DD_DATABASE_PASSWORD}
+  jpa:
+    generate-ddl: false
+    open-in-view: false
+---
+spring:
+  config:
+    activate:
+      on-profile: cloud
+  datasource:
+    platform: postgres
+    driverClassName: org.potgresql.Driver
+    url: jdbc:postgresql://<CLOUD_DB_URL>:5432/stats-db
+    username: <CLOUD_DB_USER>
+    password: <CLOUD_DB_PASSWORD>
+  jpa:
+    generate-ddl: false
+  

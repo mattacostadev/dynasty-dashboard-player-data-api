@@ -1,2 +1,6 @@
-# dynasty-dashboard-player-data-api
-REST API for retrieving player data from the Dynasty Dashboard database
+# Dynasty Dashboard Player Data API
+## Description:
+A REST API for retrieving player data from the Dynasty Dashboard database
+## Technologies:
+- Java 11
+- Maven
