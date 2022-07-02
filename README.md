@@ -6,6 +6,6 @@ A REST API for retrieving player data from the Dynasty Dashboard database
 - Maven
 - PostgresSQL
 - Spring Boot
-- Spring Starter Web
-- Spring Starter Test
+- Spring Starter Web (Server)
+- Spring JPA
 - Google GSON
