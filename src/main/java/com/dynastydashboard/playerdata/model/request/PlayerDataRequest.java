@@ -5,16 +5,16 @@ import java.util.List;
 public class PlayerDataRequest {
     private List<String> playerIDs;
 
-    private boolean includeStats;
+    private List<String> statsCategories;
 
-    private String statsGranularity;
+    private List<String> infoCategories;
 
-    public List<String> getPlayerID() { return playerIDs; }
-    public void setPlayerID(List<String> playerIDs) { this.playerIDs = playerIDs; }
+    public List<String> getPlayerIDs() { return playerIDs; }
+    public void setPlayerIDs(List<String> playerIDs) { this.playerIDs = playerIDs; }
 
-    public boolean getIncludeStats() { return includeStats; }
-    public void setIncludeStats(boolean includeStats) { this.includeStats = includeStats; }
+    public List<String> getStatsCategories() { return statsCategories; }
+    public void setStatsCategories(List<String> statsCategories) { this.statsCategories = statsCategories; }
 
-    public String getStatsGranularity() { return statsGranularity; }
-    public void setStatsGranularity(String statsGranularity) { this.statsGranularity = statsGranularity; }
+    public List<String> getInfoCategories() { return infoCategories; }
+    public void setInfoCategories(List<String> infoCategories) { this.infoCategories = infoCategories; }
 }
