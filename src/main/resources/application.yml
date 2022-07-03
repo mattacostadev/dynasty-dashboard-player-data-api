@@ -5,7 +5,7 @@ spring:
   datasource:
     platform: postgres
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://${DD_DATABASE_URL}:5432/stats-db
+    url: jdbc:postgresql://${DD_DATABASE_URL}:5432/player-data
     username: ${DD_DATABASE_USER}
     password: ${DD_DATABASE_PASSWORD}
   jpa:
@@ -19,9 +19,10 @@ spring:
   datasource:
     platform: postgres
     driverClassName: org.potgresql.Driver
-    url: jdbc:postgresql://<CLOUD_DB_URL>:5432/stats-db
+    url: jdbc:postgresql://<CLOUD_DB_URL>:5432/player-data
     username: <CLOUD_DB_USER>
     password: <CLOUD_DB_PASSWORD>
   jpa:
     generate-ddl: false
+    open-in-view: false
   
