@@ -1,18 +1,15 @@
 package com.dynastydashboard.playerdata.model.response;
 
+import java.util.List;
+
 public class PlayerDataResponse {
     private String message;
 
-    private PlayerStats playerStats;
-
-    private PlayerInfo playerInfo;
+    private List<PlayerData> playerData;
 
     public String getMessage() { return message; }
     public void setMessage(String message) { this.message = message; }
 
-    public PlayerStats getPlayerStats() { return playerStats; }
-    public void setPlayerStats(PlayerStats playerStats) { this.playerStats = playerStats; }
-
-    public PlayerInfo getPlayerInfo() { return playerInfo; }
-    public void setPlayerInfo(PlayerInfo playerInfo) { this.playerInfo = playerInfo; }
+    public List<PlayerData> getPlayerData() { return playerData; }
+    public void setPlayerData(List<PlayerData> playerData) { this.playerData = playerData; }
 }

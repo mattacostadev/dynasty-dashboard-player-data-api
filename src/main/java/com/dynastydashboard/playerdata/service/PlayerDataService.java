@@ -4,5 +4,5 @@ import com.dynastydashboard.playerdata.model.request.PlayerDataRequest;
 import com.dynastydashboard.playerdata.model.response.PlayerDataResponse;
 
 public interface PlayerDataService {
-    public PlayerDataResponse processPlayerDataRequest(PlayerDataRequest playerDataRequest);
+    public PlayerDataResponse retrievePlayerData(PlayerDataRequest playerDataRequest);
 }
